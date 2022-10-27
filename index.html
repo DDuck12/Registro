@@ -9,23 +9,23 @@
                 <h1 class="registro">
                     Registro
                 </h1>
-                <form class="input-group">
-                    <input type="text" class="input-field" placeholder="Nombre">
-                    <input type="text" class="input-field" placeholder="Cursillo">
-                    <input type="text" class="input-field" placeholder="Comunidad">
-                    <input type="text" class="input-field" placeholder="Telefono">
-                    <input type="email" class="input-field" placeholder="Correo">
-                    <input list="binario" class="input-field" name="binario" placeholder="Asistes a Ultreyas?">
+                <form class="input-group" action="process-form.php" method="post">
+                    <input type="text" class="input-field" placeholder="Nombre" name="nombre">
+                    <input type="text" class="input-field" placeholder="Cursillo" name="cursillo">
+                    <input type="text" class="input-field" placeholder="Comunidad" name="comunidad">
+                    <input type="text" class="input-field" placeholder="Telefono" name="telefono">
+                    <input type="email" class="input-field" placeholder="Correo" name="correo">
+                    <input list="binario" class="input-field" name="binario" placeholder="Asistes a Ultreyas?" name="ultreyas">
                     <datalist  id="binario">
                         <option value= "Si">
                         <option value= "No">
                     </datalist> 
-                    <input list="binario2" class="input-field" name="binario2" placeholder="Tienes Reunion de Grupo?">
+                    <input list="binario2" class="input-field" name="binario2" placeholder="Tienes Reunion de Grupo?" name="reunionDeGrupo">
                     <datalist  id="binario2">
                         <option value= "Si">
                         <option value= "No">
                     </datalist> 
-                    <button type="submit" class="submit-btn">Registrarse</button>
+                    <button type="submit" class="submit-btn" id="registrar-btn">Registrarse</button>
                 </form>
             </div>
         </div>
