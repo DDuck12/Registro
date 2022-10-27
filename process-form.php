@@ -34,3 +34,16 @@ $stmt = mysqli_stmt_init($conn);
 if (! mysqli_stmt_prepare($stmt, $sql)) {
     die(mysqli_error($conn));
 }
+
+mysqli_stmt_bind_param($stmt, "sssssss",
+                       $nombre,
+                       $cursillo,
+                       $comunidad,
+                       $telefono,
+                       $correo,
+                       $ultreyas,
+                       $reunionDeGrupo);
+                    
+mysqli_stmt_execute($stmt);
+
+echo "Saved record"
