@@ -12,7 +12,7 @@ var_dump($nombre, $cursillo, $comunidad, $telefono, $correo, $ultreyas, $reunion
 
 $host = "localhost";
 $dbname = "registro_db";
-$username = "root@localhost";
+$username = "root";
 $password = "";
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
