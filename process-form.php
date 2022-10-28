@@ -43,4 +43,4 @@ mysqli_stmt_bind_param($stmt, "sssssss",
                     
 mysqli_stmt_execute($stmt);
 
-echo "Saved record"
+echo "Saved record";
